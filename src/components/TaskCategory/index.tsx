@@ -10,19 +10,29 @@ const TaskCategory = (props: TaskCategoryProps) => {
   const [tasksData, setTasksData] = useState<(Task | undefined)[]>([]);
   const [tasksComplete, setTasksComplete] = useState<number>(0);
   const [dirty, setDirty] = useState<boolean>(false);
-  const [collapsed, setCollapsed] = useState<boolean>(false);
+  const [collapsed, setCollapsed] = useState<boolean>(true);
 
   const totalTasks = tasksData?.length;
 
   useEffect(() => {
-    const data: (Task | undefined)[] = tasks.map((task) => taskHash.get(task));
+    const data: (Task | undefined)[] = tasks.map((task): Task | undefined => {
+      const item = taskHash.get(task);
+      return (
+        item && {
+          ...item,
+          title: item?.title || '',
+          id: task,
+        }
+      );
+    });
     setTasksData(data);
   }, [tasks]);
 
   useEffect(() => {
     setTasksComplete(
       tasksData.reduce(
-        (prev, cur) => prev + (checkData.get(cur?.id || '') ? 1 : 0),
+        (prev, cur) =>
+          prev + (checkData.find((item) => item === cur?.id || '') ? 1 : 0),
         0
       )
     );
@@ -95,10 +105,11 @@ const TaskCategory = (props: TaskCategoryProps) => {
                 </tr>
               </thead>
               <tbody>
-                {tasksData?.map((task: Task | undefined) => {
+                {tasksData?.map((task: Task | undefined, index: number) => {
                   return (
                     task && (
                       <ProgressRow
+                        index={index + 1}
                         id={task.id}
                         title={task.title}
                         image={task.image}

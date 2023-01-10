@@ -6,7 +6,7 @@ export const mapToJson = (map: Map<any, any>) => {
   }
 };
 
-export const jsonToMap = (json: string) => {
+export const jsonToMap = (json: string): Map<string, boolean> | null => {
   if (json) {
     return new Map(JSON.parse(json));
   } else {

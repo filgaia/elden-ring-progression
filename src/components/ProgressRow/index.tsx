@@ -8,6 +8,7 @@ import Modal from 'components/Modal';
 
 const ProgressRow = (props: ProgressRowProps) => {
   const {
+    index,
     id,
     title,
     checkedData,
@@ -17,12 +18,13 @@ const ProgressRow = (props: ProgressRowProps) => {
     setDirty,
     toggleCheckbox,
   } = props;
-  const [checked, setChecked] = useState<boolean>();
+  const [checked, setChecked] = useState<boolean>(false);
   const [showModal, setShowModal] = useState<boolean>(false);
 
   useEffect(() => {
-    if (checked !== checkedData.get(id)) {
-      setChecked(checkedData.get(id));
+    const item = !!checkedData.find((i) => i === id);
+    if (checked !== item) {
+      setChecked(item);
     }
   }, [checkedData, checked, id]);
 
@@ -44,12 +46,13 @@ const ProgressRow = (props: ProgressRowProps) => {
           <input
             className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
             type="checkbox"
+            onChange={handleCheck}
             checked={checked}
             id={id}
           />
         </td>
         <td className="text-sm text-gray-900 font-light px-6 py-4">
-          {title}
+          {index}. {title}
           {longDesc && (
             <button
               className="bg-blue-500 text-white active:bg-blue-600 ml-6 px-2 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"

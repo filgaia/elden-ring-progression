@@ -8,6 +8,7 @@ export const progression: PageCategory[] = [
       'obtain-wetstone-knife',
       'limegrave-west-map-fragment',
       'boc-seamster-quest',
+      'defeat-nights-cavalry',
       'find-sellen',
       'talk-to-roderika',
       'find-ashes-of-war-merchant',

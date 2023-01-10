@@ -2,6 +2,6 @@ import { PageCategory } from 'pageConfig/page/types';
 
 export interface TaskCategoriesProps {
   pageCategories: PageCategory[];
-  checkData: Map<string, boolean>;
+  checkData: string[];
   toggleCheckbox: (checked: boolean, id: string) => void;
 }

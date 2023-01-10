@@ -1,19 +1,16 @@
-import { ChangeEvent, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import TaskCategories from 'components/TaskCategories';
 import { progression } from 'pageConfig/page';
 import cloneDeep from 'lodash.clonedeep';
 import debounce from 'lodash.debounce';
 import Header from 'components/Header';
 import useLocalStorage from 'hooks/useLocalstorage';
-import { jsonToMap, mapToJson } from 'utils/map';
-import { Task } from 'pageConfig/tasks/types';
 
-const initialCheckData = new Map<string, boolean>();
+const initialCheckData: string[] = [];
 
 const TaskCategoriesContainer = () => {
-  const [checkData, setCheckData] =
-    useState<Map<string, boolean>>(initialCheckData);
-  const [dataToSave, setDataToSave] = useState<Map<string, boolean>>();
+  const [checkData, setCheckData] = useState<string[]>(initialCheckData);
+  const [dataToSave, setDataToSave] = useState<string[]>();
   const [isDirty, setIsDirty] = useState<boolean>();
   const [savedCheckData, setSavedCheckData] = useLocalStorage(
     'savedCheckData',
@@ -23,14 +20,13 @@ const TaskCategoriesContainer = () => {
   useEffect(() => {
     // onload, check localStorage and set checked
     if (savedCheckData) {
-      const loadedDataMap = jsonToMap(savedCheckData) as Map<string, boolean>;
-      if (loadedDataMap) setCheckData(loadedDataMap);
+      setCheckData(savedCheckData);
     }
   }, []);
 
   useEffect(() => {
     if (dataToSave) {
-      setSavedCheckData(mapToJson(dataToSave));
+      setSavedCheckData(dataToSave);
     }
   }, [dataToSave]);
 
@@ -42,8 +38,13 @@ const TaskCategoriesContainer = () => {
   ).current;
 
   const toggleCheckbox = (checked: boolean, id: string) => {
-    const newCheckData = cloneDeep(checkData);
-    newCheckData.set(id, checked);
+    let newCheckData = cloneDeep(checkData);
+
+    if (checked) {
+      newCheckData.push(id);
+    } else {
+      newCheckData = newCheckData.filter((item) => item !== id);
+    }
     setCheckData(newCheckData);
     setIsDirty(true);
     debouncedSave(newCheckData);
