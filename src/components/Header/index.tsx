@@ -23,13 +23,13 @@ const Header = (props: HeaderProps) => {
         </a>
         . -{' '}
         <a
-          href="https://github.com/JacobMillner/elden-ring-progression"
+          href="https://github.com/filgaia/elden-ring-progression"
           target="_blank"
           rel="noreferrer"
         >
           Github Repo
         </a>{' '}
-        -
+        - Credits to{' '}
         <a href="https://jacobmillner.dev/" target="_blank" rel="noreferrer">
           jacobmillner.dev
         </a>
