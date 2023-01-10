@@ -2,12 +2,10 @@ import { Task } from './types';
 
 const taskHash: Map<string, Partial<Task>> = new Map([
   [
-    'obtain-wetstone-knife',
+    'buy-essential-gear',
     {
-      title: 'Obtain Whetstone Knife',
-      image:
-        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whetstone_knife-elden-ring-wiki-guide-200px.png',
-      link: 'https://eldenring.wiki.fextralife.com/Whetstone+Knife',
+      title: 'Buy Essential Gear',
+      link: '',
     },
   ],
   [
@@ -17,6 +15,22 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       image:
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/map_limgrave_west_key_items_elden_ring_wiki_guide_200px.png',
       link: 'https://eldenring.wiki.fextralife.com/Map+(Limgrave,+West)',
+    },
+  ],
+  [
+    'obtain-wetstone-knife',
+    {
+      title: 'Obtain Whetstone Knife',
+      image:
+        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whetstone_knife-elden-ring-wiki-guide-200px.png',
+      link: 'https://eldenring.wiki.fextralife.com/Whetstone+Knife',
+    },
+  ],
+  [
+    'unlock-torrent',
+    {
+      title: 'Unlock Torrent & Spirit Bell',
+      link: 'https://eldenring.wiki.fextralife.com/Torrent',
     },
   ],
   [
@@ -113,7 +127,7 @@ const taskHash: Map<string, Partial<Task>> = new Map([
   [
     'get-wondrous',
     {
-      title: 'get the flask of wondrous physik',
+      title: 'Get the flask of wondrous physik',
       longDesc: `<p>Continue following the road northeast from here until you reach the <a class="wiki_link" title="Elden Ring Third Church of Marika" href="/Third+Church+of+Marika" target="">Third Church of Marika</a>, where you can loot the <a class="wiki_link" title="Elden Ring Flask of Wondrous Physick" href="/Flask+of+Wondrous+Physick">Flask of Wondrous Physick</a> and the <a class="wiki_link" title="Elden Ring Crimson Crystal Tear" href="/Crimson+Crystal+Tear" target="">Crimson Crystal Tear</a>. This is an important flask for your journey so don't miss it!</p>`,
       image:
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flask_of_wondrous_physick_tools_consumables_elden_ring_wiki_guide_200px.png',
@@ -238,7 +252,7 @@ const taskHash: Map<string, Partial<Task>> = new Map([
     },
   ],
   [
-    'default-knights-cavalry',
+    'defeat-nights-cavalry-2',
     {
       title: "Defeat Night's Cavalry",
       longDesc: `<p>Proceed south into the <a class="wiki_link" title="Elden Ring Weeping Peninsula" href="/Weeping+Peninsula" target="">Weeping Peninsula</a> and you'll meet <a class="wiki_link" title="Elden Ring Irina " href="/Irina" target="">Irina</a>&nbsp;by the road. She will ask you to talk to her Father at Castle Morne. You will get there later so for now just continue down the road and rest at the Castle Morne Rampart site of grace. A miniboss roams the area at night. This is a <a class="wiki_link" title="Elden Ring Night's Cavalry" href="/Night's+Cavalry" target="">Night's Cavalry</a> and defeating him will give you the&nbsp;<a class="wiki_link" title="Elden Ring Ash of War: Barricade" href="/Ash+of+War:+Barricade" target="">Ash of War: Barricade</a>.</p>`,
@@ -275,6 +289,13 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       image:
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/minor-erdtree-weeping-peninsula-location-elden-ring-wiki-guide.jpg',
       link: 'https://eldenring.wiki.fextralife.com/Minor+Erdtree+(Weeping+Peninsula)',
+    },
+  ],
+  [
+    'head-up-from-stormhill',
+    {
+      title: 'Head up from Stormhill into Stormveil',
+      link: 'https://eldenring.wiki.fextralife.com/Stormhill',
     },
   ],
   [
@@ -326,6 +347,13 @@ const taskHash: Map<string, Partial<Task>> = new Map([
     },
   ],
   [
+    'ascend-the-castle',
+    {
+      title: 'Ascend the Castle and clear Enemies in your path',
+      link: 'https://eldenring.wiki.fextralife.com/Enemies',
+    },
+  ],
+  [
     'defeat-banished-knight',
     {
       title: 'Defeat the Banished Knight and retrieve the Rusty Key',
@@ -364,6 +392,12 @@ const taskHash: Map<string, Partial<Task>> = new Map([
   ],
   [
     'clear-the-castle-1',
+    {
+      title: 'Clear the castle',
+    },
+  ],
+  [
+    'fight-the-lion',
     {
       title: 'Fight the Lion Guardian Mini-boss',
       image:
@@ -474,6 +508,13 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       image:
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rose_church_location_elden_ring_wiki_guide_300x.jpg',
       link: 'https://eldenring.wiki.fextralife.com/Rose+Church',
+    },
+  ],
+  [
+    'find-lakeside-crystal-cave',
+    {
+      title: 'Find Lakeside Crystal Cave and Latenna',
+      link: 'https://eldenring.wiki.fextralife.com/Lakeside+Crystal+Cave',
     },
   ],
   [
@@ -760,6 +801,13 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       longDesc: `<p>You can follow now follow the main road north and activate the Altus Highway Junction site of grace, nearby you can meet <a class="wiki_link" title="Elden Ring Boc the Seamster" href="/Boc+the+Seamster" target="">Boc the Seamster</a> and advance his quest. North from here the road takes you to a <a class="wiki_link" title="Elden Ring Golden Seed" href="/Golden+Seed" target="">Golden Seed</a> and <a class="wiki_link" title="Elden Ring Map (Altus Plateau)" href="/Map+(Altus+Plateau)" target="">Map (Altus Plateau)</a> to reveal the region. Slightly north, talk to <a class="wiki_link" title="Elden Ring Brother Corhyn" href="/Brother+Corhyn" target="">Brother Corhyn</a> who is looking for the Goldmask. Directly east from the Atlus Highway Junction Site of Grace, follow the road until it breaks off <strong>north</strong> into an open cave, in the cave the <a class="wiki_link" title="Elden Ring Amber Starlight" href="/Amber+Starlight" target="">Amber Starlight</a> will be sitting below a statue surrounded by octupus ball creatures. <a class="wiki_link" title="Elden Ring Interactive Map?id=5766&amp;lat=-95.45&amp;lng=87.133&amp;zoom=8&amp;code=mapA" href="/Interactive+Map?id=5766&amp;lat=-95.45&amp;lng=87.133&amp;zoom=8&amp;code=mapA">Map Link</a> - you need this item for&nbsp;<a class="wiki_link" title="Elden Ring Preceptor Seluvis" href="/Preceptor+Seluvis">Seluvis's</a> quest if you are doing it, but in this playthrough we have already bypassed his side-quest.</p>`,
       image: '',
       link: 'https://eldenring.wiki.fextralife.com/Golden+Lineage+Evergaol',
+    },
+  ],
+  [
+    'boc-the-seamster',
+    {
+      title: 'Boc the Seamster',
+      link: 'https://eldenring.wiki.fextralife.com/Boc+the+Seamster',
     },
   ],
   [
@@ -1251,7 +1299,7 @@ const taskHash: Map<string, Partial<Task>> = new Map([
     },
   ],
   [
-    'kill-knighs-cavalry-2',
+    'defeat-nights-cavalry-3',
     {
       title: "Defeat Night's Cavalry",
       image:
@@ -1276,6 +1324,13 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       image:
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragon_cult_prayerbook_elden_ring_wiki_guide_200px.png',
       link: 'https://eldenring.wiki.fextralife.com/Dragon+Cult+Prayerbook',
+    },
+  ],
+  [
+    'visit-artist-shack',
+    {
+      title: "Visit Artist's Shack and Jarburg",
+      link: "https://eldenring.wiki.fextralife.com/Artist's+Shack",
     },
   ],
   [
@@ -1434,12 +1489,26 @@ const taskHash: Map<string, Partial<Task>> = new Map([
     },
   ],
   [
+    'talk-to-napheli-loux',
+    {
+      title: 'Talk to Nepheli Loux',
+      link: 'https://eldenring.wiki.fextralife.com/Nepheli+Loux',
+    },
+  ],
+  [
     'loot-secret-medallion-key',
     {
       title: 'Loot Secret Medallion Key',
       image:
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree-secret-medalllion-right-key-itemselden-ring-wiki-guide.png',
       link: 'https://eldenring.wiki.fextralife.com/Haligtree+Secret+Medallion+(Right)',
+    },
+  ],
+  [
+    'talk-to-latenna',
+    {
+      title: 'Talk to Latenna',
+      link: 'https://eldenring.wiki.fextralife.com/Latenna',
     },
   ],
   [
@@ -1553,6 +1622,13 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       title: 'Collect Spells & Talismans',
       longDesc: `<p><a class="wiki_link" title="Elden Ring Interactive Map?id=1185&amp;lat=-187.414062&amp;lng=122.572832&amp;zoom=5&amp;code=mapB" href="/Interactive+Map?id=1185&amp;lat=-187.414062&amp;lng=122.572832&amp;zoom=5&amp;code=mapB">Elden Ring Map: Siofra River Starting Point</a>. Head to <a class="wiki_link" title="Elden Ring Mistwood" href="/Mistwood" target="">Mistwood</a> and go down <a class="wiki_link" title="Elden Ring Siofra River Well" href="/Siofra+River+Well" target="">Siofra River Well</a> - unlock the <a class="wiki_link" title="Elden Ring Interactive Map?id=1185&amp;lat=-187.414062&amp;lng=122.572832&amp;zoom=8&amp;code=mapB" href="/Interactive+Map?id=1185&amp;lat=-187.414062&amp;lng=122.572832&amp;zoom=8&amp;code=mapB">Site of Grace here</a> if you haven't. This area is filled with <a class="wiki_link" title="Elden Ring Ancestral Follower" href="/Ancestral+Follower" target="">Ancestral Follower</a> enemies that are generally best to take at a distance, but be VERY mindful of their incredibly powerful arrows. The area has lots of useful materials for weapons level 10+, so check out the interactive map for exact loot locations. You should make sure to pick up the&nbsp;<a class="wiki_link" title="Elden Ring Armorer's Cookbook (6)" href="/Armorer's+Cookbook+(6)" target="">Armorer's Cookbook (6)</a> and the <a class="wiki_link" title="Elden Ring Map (Siofra River)" href="/Map+(Siofra+River)" target="">Map (Siofra River)</a> before exploring further.</p>`,
       image: '',
+      link: '',
+    },
+  ],
+  [
+    'collect-key-items',
+    {
+      title: 'Collect Key Items',
       link: '',
     },
   ],
@@ -1731,6 +1807,13 @@ const taskHash: Map<string, Partial<Task>> = new Map([
     },
   ],
   [
+    'head-to-altus-plateau',
+    {
+      title: 'Head to Altus Plateau',
+      link: 'https://eldenring.wiki.fextralife.com/Altus+Plateau',
+    },
+  ],
+  [
     'access-nokron-from-mistwood',
     {
       title: 'Access Nokron from Mistwood',
@@ -1903,6 +1986,111 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       link: 'https://eldenring.wiki.fextralife.com/Iron+Fist+Alexander',
     },
   ],
+  [
+    'defeat-tree-sentinel-duo',
+    {
+      title: 'Defeat Tree Sentinel duo',
+      link: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel',
+    },
+  ],
+  [
+    'collect-map-and-golden-seed',
+    {
+      title: 'Collect Map & Golden Seed',
+      link: 'https://eldenring.wiki.fextralife.com/Golden+Seed',
+    },
+  ],
+  [
+    'complete-sealed-tunnel',
+    {
+      title: 'Complete Sealed Tunnel',
+      link: 'https://eldenring.wiki.fextralife.com/Sealed+Tunnel',
+    },
+  ],
+  [
+    'collect-golden-seeds-and-fight-margit',
+    {
+      title: 'Collect Golden Seeds & Fight Margit',
+      link: 'https://eldenring.wiki.fextralife.com/Golden+Seed',
+    },
+  ],
+  [
+    'complete-events-in-hermit-merchant-shack',
+    {
+      title: "Complete events in Hermit Merchant's Shack",
+      link: "https://eldenring.wiki.fextralife.com/Hermit+Merchant's+Shack",
+    },
+  ],
+  [
+    'loot-flask-upgrades',
+    {
+      title: 'Loot Flask Upgrades',
+    },
+  ],
+  [
+    'visit-blackguard-big-boggart',
+    {
+      title: 'Visit Blackguard Big Boggart',
+      link: 'https://eldenring.wiki.fextralife.com/Blackguard+Big+Boggart',
+    },
+  ],
+  [
+    'complete-auriza-hero',
+    {
+      title: "Complete Auriza Hero's Grave & Auriza Side Tomb",
+      link: "https://eldenring.wiki.fextralife.com/Auriza+Hero's+Grave",
+    },
+  ],
+  [
+    'complete-legacy-dungeon',
+    {
+      title: 'Complete Legacy Dungeon',
+      link: 'https://eldenring.wiki.fextralife.com/Leyndell+Royal+Capital+(Legacy+Dungeon)',
+    },
+  ],
+  [
+    'defeat-nights-cavalry-4',
+    {
+      title: "Defeat Night's Cavalry",
+      image:
+        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights_cavalry_bosses_elden_ring_wiki_guide.jpg',
+      link: "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
+    },
+  ],
+  [
+    'collect-golden-seed',
+    {
+      title: 'Collect Golden Seed',
+      longDesc: `<p>Once you are done with exploring those, go west and down to the canyon floor, to find Seethewater River site of grace. Begin your ride northward, a teardrop scarab nearby drops <a class="wiki_link" title="Elden Ring Ash of War: Barrage" href="/Ash+of+War:+Barrage" target="">Ash of War: Barrage</a>. Continue your way north avoiding the waves of heat until you come to a <a class="wiki_link" title="Elden Ring Golden Seed" href="/Golden+Seed" target="">Golden Seed</a>. Further ahead, you can loot 1x <a class="wiki_link" title="Elden Ring Smithing Stone (5)" href="/Smithing+Stone+(5)" target="">Smithing Stone (5)</a> before arriving to an Imp Gate defended by <a class="wiki_link" title="Elden Ring Basilisk" href="/Basilisk" target="">Basilisks</a> that needs a Stonesword Key - this is <a class="wiki_link" title="Elden Ring Seethewater Cave" href="/Seethewater+Cave" target="">Seethewater Cave</a>, and you can get the peculiar <a class="wiki_link" title="Elden Ring Mushroom Set" href="/Mushroom+Set" target="">Mushroom Set</a> and <a class="wiki_link" title="Elden Ring Kindred of Rot's Exultation" href="/Kindred+of+Rot's+Exultation" target="">Kindred of Rot's Exultation</a> talisman.</p>`,
+      image:
+        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden_seed_elden_ring_wiki_guide_200px.png',
+      link: 'https://eldenring.wiki.fextralife.com/Golden+Seed',
+    },
+  ],
+  [
+    'activate-grand-lift-of-rold',
+    {
+      title: 'Activate Grand Lift of Rold',
+    },
+  ],
+  /*
+    Obtain Area Map
+    Talk to Shabriri
+    Explore Zamor Ruins
+    Access Ancient Snowvalley
+    Obtain Golden Seed
+    Complete Shack of the Lofty
+    Talk to Brother Corhyn
+    Complete Minor Erdtree
+    Unlock Heretical Rise
+    Complete Frozen Lake Objectives
+    Complete Guardian's Garrison
+    Obtain second Map Fragment
+    Gather Flask Upgrades
+    Unlock Foot of the Forge
+    Complete Castle Sol
+    Defeat Fire Giant
+   */
 ]);
 
 export default taskHash;

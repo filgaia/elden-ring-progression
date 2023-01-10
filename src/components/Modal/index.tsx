@@ -27,11 +27,11 @@ const Modal = (props: ModalProps) => {
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
                     {longDesc && (
-                      <div
+                      <span
                         dangerouslySetInnerHTML={{
                           __html: fixLongDesc(longDesc),
                         }}
-                      ></div>
+                      ></span>
                     )}
                   </p>
                 </div>
