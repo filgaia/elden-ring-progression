@@ -299,7 +299,6 @@ export const progression: PageCategory[] = [
       'defeat-morgott-the-omen-king',
       'barrier-in-capital-outskirts-is-no-longer',
       'proceed-to-the-forbidden-lands',
-      'proceed-to-the-forbidden-lands',
     ],
   },
   {

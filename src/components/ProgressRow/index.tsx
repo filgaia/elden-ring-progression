@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ProgressRowProps } from './types';
-import { InformationCircleIcon } from '@heroicons/react/solid';
+import {
+  InformationCircleIcon,
+  ArrowTopRightOnSquareIcon,
+} from '@heroicons/react/24/solid';
 import Modal from 'components/Modal';
 
 const ProgressRow = (props: ProgressRowProps) => {
@@ -32,7 +35,7 @@ const ProgressRow = (props: ProgressRowProps) => {
     <>
       <tr
         id={id}
-        className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100"
+        className="odd:bg-white even:bg-gray-50 border-b transition duration-300 ease-in-out hover:bg-gray-100"
       >
         <td
           className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap hover:cursor-pointer"
@@ -45,7 +48,7 @@ const ProgressRow = (props: ProgressRowProps) => {
             id={id}
           />
         </td>
-        <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+        <td className="text-sm text-gray-900 font-light px-6 py-4">
           {title}
           {longDesc && (
             <button
@@ -59,16 +62,20 @@ const ProgressRow = (props: ProgressRowProps) => {
         </td>
         <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
           <a href={link} target="_blank" rel="noreferrer">
-            {link}
+            <ArrowTopRightOnSquareIcon className="h-5 w-5 text-black-500" />
           </a>
         </td>
-        <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+        <td className="text-sm text-gray-900 font-light whitespace-nowrap">
           <div className="flex flex-wrap justify-center">
             {image && image !== '' && (
               <a href={image} target="_blank" rel="noreferrer">
                 <img
                   src={image}
-                  className="object-scale-down h-20 w-20 p-1 bg-white border rounded shadow-lg max-w-sm hover:bg-grey-600 transition duration-500 hover:scale-150"
+                  onError={(event) => {
+                    event.currentTarget.src =
+                      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whetstone_knife-elden-ring-wiki-guide-200px.png';
+                  }}
+                  className="object-scale-down h-20 w-20 p-1 bg-white border rounded shadow-lg max-w-full hover:bg-grey-600 transition duration-500 hover:scale-150"
                   alt={title}
                 />
               </a>

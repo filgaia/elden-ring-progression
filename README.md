@@ -2,6 +2,6 @@
 
 TODO: Fill this out 😅
 
-Visit the WIP site here:
+Visit here:
 
-https://eldenringprogress.com/
+https://filgaia.github.io/elden-ring-progression/
