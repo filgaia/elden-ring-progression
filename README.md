@@ -17,3 +17,7 @@ https://filgaia.github.io/elden-ring-progression/
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [heroicons](https://heroicons.com/)
+
+## TODO
+
+- Optimize `tasks` file to have one id for category and an `Array` of `Tasks`.

@@ -45,7 +45,9 @@ const ProgressRow = (props: ProgressRowProps) => {
         alt={title}
       />
     ) : (
-      longDesc && <InformationCircleIcon className="h-5 w-5 text-black-500" />
+      longDesc && (
+        <InformationCircleIcon className="bg-white h-10 w-10 text-blue-500 rounded shadow-lg transition duration-500 hover:scale-150" />
+      )
     );
   };
 
@@ -86,7 +88,7 @@ const ProgressRow = (props: ProgressRowProps) => {
         <div className="flex flex-wrap justify-center">
           {longDesc ? (
             <button
-              className="text-black ml-6 px-2 py-1 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              className="outline-none focus:outline-none ease-linear transition-all duration-150"
               type="button"
               onClick={() => setShowModal(true)}
             >

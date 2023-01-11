@@ -12,7 +12,7 @@ const Header = (props: HeaderProps) => {
           </h2>
         </main>
       </div>
-      <div className="mb-2 ml-4">
+      <div className="m-4">
         Elden Ring Progress guide and checklist based on the{' '}
         <a
           href="https://eldenring.wiki.fextralife.com/Game+Progress+Route"

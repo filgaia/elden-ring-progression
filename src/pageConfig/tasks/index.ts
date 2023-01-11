@@ -1008,66 +1008,6 @@ const taskHash: Map<string, Partial<Task>> = new Map([
     },
   ],
   [
-    'enter-leyndell',
-    {
-      title: 'Enter Leyndell',
-      image:
-        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_royal_capital_locations_elden_ring_wiki_guide_300px.jpg',
-      link: 'https://eldenring.wiki.fextralife.com/Leyndell+Royal+Capital',
-    },
-  ],
-  [
-    'go-to-the-erdtree-sanctuary',
-    {
-      title: 'Go to the Erdtree Sanctuary',
-      image: '',
-      link: 'https://eldenring.wiki.fextralife.com/Interactive+Map?id=4121&lat=-106.921&lng=115.778&zoom=8&code=mapA',
-    },
-  ],
-  [
-    'defeat-godfrey-first-elden-lord-golden-shade',
-    {
-      title: 'Defeat Godfrey, First Elden Lord (Golden Shade)',
-      image:
-        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey_golden_shade_bosses_elden_ring_wiki_guide.jpg',
-      link: 'https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord+(Golden+Shade)',
-    },
-  ],
-  [
-    'get-in-the-queens-bedchamber',
-    {
-      title: "Get in the Queen's Bedchamber",
-      image: '',
-      link: 'https://eldenring.wiki.fextralife.com/Interactive+Map?id=3222&lat=-105.62&lng=119.168&zoom=8&code=mapA',
-    },
-  ],
-  [
-    'defeat-morgott-the-omen-king',
-    {
-      title: 'Defeat Morgott the Omen King',
-      image:
-        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/morgott-the-omen-king.jpg',
-      link: 'https://eldenring.wiki.fextralife.com/Morgott+the+Omen+King',
-    },
-  ],
-  [
-    'barrier-in-capital-outskirts-is-no-longer',
-    {
-      title: 'Barrier in the Capital Outskirts is no longer',
-      image: '',
-      link: 'https://eldenring.wiki.fextralife.com/Interactive+Map?id=1451&lat=-102.398437&lng=125.082242&zoom=8&code=mapA',
-    },
-  ],
-  [
-    'proceed-to-the-forbidden-lands',
-    {
-      title: 'Proceed to the Forbidden Lands',
-      image:
-        'https://eldenring.wiki.fextralife.com/file/Elden-Ring/forbidden-lands-hub-location-preview-elden-ring-wiki-guide-300px.jpeg',
-      link: 'https://eldenring.wiki.fextralife.com/Forbidden+Lands',
-    },
-  ],
-  [
     'enter-leyndell-royal-capital',
     {
       title: 'Enter from Leyndell Royal Capital',
@@ -1083,14 +1023,6 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       image:
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_royal_capital_locations_elden_ring_wiki_guide_300px.jpg',
       link: 'https://eldenring.wiki.fextralife.com/Leyndell+Royal+Capital',
-    },
-  ],
-  [
-    'proceed-to-mountaintops-of-giants',
-    {
-      title: 'Proceed to Mountaintops of the Giants',
-      image: '',
-      link: 'https://eldenring.wiki.fextralife.com/Mountaintops+of+the+Giants',
     },
   ],
   [
@@ -2073,24 +2005,524 @@ const taskHash: Map<string, Partial<Task>> = new Map([
       title: 'Activate Grand Lift of Rold',
     },
   ],
-  /*
-    Obtain Area Map
-    Talk to Shabriri
-    Explore Zamor Ruins
-    Access Ancient Snowvalley
-    Obtain Golden Seed
-    Complete Shack of the Lofty
-    Talk to Brother Corhyn
-    Complete Minor Erdtree
-    Unlock Heretical Rise
-    Complete Frozen Lake Objectives
-    Complete Guardian's Garrison
-    Obtain second Map Fragment
-    Gather Flask Upgrades
-    Unlock Foot of the Forge
-    Complete Castle Sol
-    Defeat Fire Giant
-   */
+  [
+    'mountaintops-of-the-giants-01',
+    {
+      title: 'Obtain Area Map',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-02',
+    {
+      title: 'Talk to Shabriri',
+      link: 'https://eldenring.wiki.fextralife.com/Shabriri',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-03',
+    {
+      title: 'Explore Zamor Ruins',
+      link: 'https://eldenring.wiki.fextralife.com/Zamor+Ruins',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-04',
+    {
+      title: 'Access Ancient Snowvalley',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-05',
+    {
+      title: 'Obtain Golden Seed',
+      link: 'https://eldenring.wiki.fextralife.com/Golden+Seed',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-06',
+    {
+      title: 'Complete Shack of the Lofty',
+      link: 'https://eldenring.wiki.fextralife.com/Shack+of+the+Lofty',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-07',
+    {
+      title: 'Talk to Brother Corhyn',
+      link: 'https://eldenring.wiki.fextralife.com/Brother+Corhyn',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-08',
+    {
+      title: 'Complete Minor Erdtree',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-09',
+    {
+      title: 'Unlock Heretical Rise',
+      link: 'https://eldenring.wiki.fextralife.com/Heretical+Rise',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-10',
+    {
+      title: 'Complete Frozen Lake Objectives',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-11',
+    {
+      title: "Complete Guardian's Garrison",
+      link: "https://eldenring.wiki.fextralife.com/Guardian's+Garrison",
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-12',
+    {
+      title: 'Obtain second Map Fragment',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-13',
+    {
+      title: 'Gather Flask Upgrades',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-14',
+    {
+      title: 'Unlock Foot of the Forge',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-15',
+    {
+      title: 'Complete Castle Sol',
+      link: 'https://eldenring.wiki.fextralife.com/Castle+Sol',
+    },
+  ],
+  [
+    'mountaintops-of-the-giants-16',
+    {
+      title: 'Defeat Fire Giant',
+      link: 'https://eldenring.wiki.fextralife.com/Fire+Giant',
+    },
+  ],
+  [
+    'consecrated-snowfield-01',
+    {
+      title: 'Unlock Secret Path at Grand Lift of Rold',
+      link: 'https://eldenring.wiki.fextralife.com/Grand+Lift+of+Rold',
+    },
+  ],
+  [
+    'consecrated-snowfield-02',
+    {
+      title: 'Complete Hidden Path to the Haligtree',
+      link: 'https://eldenring.wiki.fextralife.com/Hidden+Path+to+the+Haligtree',
+    },
+  ],
+  [
+    'consecrated-snowfield-03',
+    {
+      title: 'Loot Golden Seed & Cookbook',
+      link: 'https://eldenring.wiki.fextralife.com/Golden+Seed',
+    },
+  ],
+  [
+    'consecrated-snowfield-04',
+    {
+      title: 'Complete Consecrated Snowfield Catacombs',
+      link: 'https://eldenring.wiki.fextralife.com/Consecrated+Snowfield+Catacombs',
+    },
+  ],
+  [
+    'consecrated-snowfield-05',
+    {
+      title: 'Complete Enemy Caravan Events',
+    },
+  ],
+  [
+    'consecrated-snowfield-06',
+    {
+      title: 'Complete Yelough Anix Tunnel and Ruins',
+      link: 'https://eldenring.wiki.fextralife.com/Yelough+Anix+Tunnel',
+    },
+  ],
+  [
+    'consecrated-snowfield-07',
+    {
+      title: 'Frozen Waterfall Exploration',
+    },
+  ],
+  [
+    'consecrated-snowfield-08',
+    {
+      title: 'Gather Map Fragment',
+    },
+  ],
+  [
+    'consecrated-snowfield-09',
+    {
+      title: 'Minor Erdtree Event',
+    },
+  ],
+  [
+    'consecrated-snowfield-10',
+    {
+      title: 'Golden Seed & Apostate Derelict Exploration',
+      link: 'https://eldenring.wiki.fextralife.com/Apostate+Derelict',
+    },
+  ],
+  [
+    'consecrated-snowfield-11',
+    {
+      title: 'Unlock Mohgwyn Palace',
+      link: 'https://eldenring.wiki.fextralife.com/Mohgwyn+Palace',
+    },
+  ],
+  [
+    'consecrated-snowfield-12',
+    {
+      title: 'Complete Ordina, Liturgical Town',
+      link: 'https://eldenring.wiki.fextralife.com/Ordina,+Liturgical+Town',
+    },
+  ],
+  [
+    'consecrated-snowfield-13',
+    {
+      title: "Unlock Miquella's Haligtree",
+      link: "https://eldenring.wiki.fextralife.com/Miquella's+Haligtree",
+    },
+  ],
+  [
+    'mohgwyn-palace-01',
+    {
+      title:
+        "Enter from Consecrated Snowfield or by using Pureblood Knight's Medal",
+      link: 'https://eldenring.wiki.fextralife.com/Consecrated+Snowfield',
+    },
+  ],
+  [
+    'mohgwyn-palace-02',
+    {
+      title: 'Obtain Area Map',
+    },
+  ],
+  [
+    'mohgwyn-palace-03',
+    {
+      title: 'Loot Key Items and Upgrade Materials',
+    },
+  ],
+  [
+    'mohgwyn-palace-04',
+    {
+      title: 'Navigate the caves of Mohgwyn Dynasty Mausoleum',
+      link: 'https://eldenring.wiki.fextralife.com/Mohgwyn+Dynasty+Mausoleum',
+    },
+  ],
+  [
+    'mohgwyn-palace-05',
+    {
+      title: 'Defeat Mohg, Lord of Blood',
+      link: 'https://eldenring.wiki.fextralife.com/Mohg,+Lord+of+Blood',
+    },
+  ],
+  [
+    'miquellas-haligtree-01',
+    {
+      title: 'Navigate the Haligtree Canopy',
+    },
+  ],
+  [
+    'miquellas-haligtree-02',
+    {
+      title: 'Collect Key Items and Ashes',
+    },
+  ],
+  [
+    'miquellas-haligtree-03',
+    {
+      title: 'Make your way through Haligtree Town',
+    },
+  ],
+  [
+    'miquellas-haligtree-04',
+    {
+      title: 'Collect Talismans and an Ancient Dragon Smithing Stone',
+      link: 'https://eldenring.wiki.fextralife.com/Ancient+Dragon+Smithing+Stone',
+    },
+  ],
+  [
+    'miquellas-haligtree-05',
+    {
+      title: 'Defeat Loretta, Knight of the Haligtree',
+      link: 'https://eldenring.wiki.fextralife.com/Loretta,+Knight+of+the+Haligtree',
+    },
+  ],
+  [
+    'miquellas-haligtree-06',
+    {
+      title: 'Enter Elphael, Brace of the Haligtree',
+      link: 'https://eldenring.wiki.fextralife.com/Elphael,+Brace+of+the+Haligtree',
+    },
+  ],
+  [
+    'miquellas-haligtree-07',
+    {
+      title: 'Navigate the Outer Wall',
+    },
+  ],
+  [
+    'miquellas-haligtree-08',
+    {
+      title: 'Collect Equipment and Ashes',
+    },
+  ],
+  [
+    'miquellas-haligtree-09',
+    {
+      title: 'Navigate the Inner Wall',
+    },
+  ],
+  [
+    'miquellas-haligtree-10',
+    {
+      title: 'Defeat the Lesser Ulcerated Tree Spirit',
+      link: 'https://eldenring.wiki.fextralife.com/Lesser+Ulcerated+Tree+Spirit',
+    },
+  ],
+  [
+    'miquellas-haligtree-11',
+    {
+      title: "Complete Millicent's Quest (if you're doing it)",
+      link: 'https://eldenring.wiki.fextralife.com/Millicent',
+    },
+  ],
+  [
+    'miquellas-haligtree-12',
+    {
+      title: 'Activate shortcut connecting bell tower and underground',
+    },
+  ],
+  [
+    'miquellas-haligtree-13',
+    {
+      title: 'Defeat Malenia, Blade of Miquella',
+      link: 'https://eldenring.wiki.fextralife.com/Malenia,+Blade+of+Miquella',
+    },
+  ],
+  [
+    'crumbling-farum-azula-01',
+    {
+      title: 'Navigate Crumbling Beast Grave',
+    },
+  ],
+  [
+    'crumbling-farum-azula-02',
+    {
+      title: 'Obtain several Key Items and Upgrade Materials',
+    },
+  ],
+  [
+    'crumbling-farum-azula-03',
+    {
+      title: 'Navigate the Dragon Temple',
+    },
+  ],
+  [
+    'crumbling-farum-azula-04',
+    {
+      title: 'Obtain a Stonesword Key',
+      link: 'https://eldenring.wiki.fextralife.com/Stonesword+Key',
+    },
+  ],
+  [
+    'crumbling-farum-azula-05',
+    {
+      title: 'Defeat the Godskin Duo',
+      link: 'https://eldenring.wiki.fextralife.com/Godskin+Duo',
+    },
+  ],
+  [
+    'crumbling-farum-azula-06',
+    {
+      title: 'Explore the Dragon Temple Lift area behind the imp statue',
+    },
+  ],
+  [
+    'crumbling-farum-azula-07',
+    {
+      title: 'Collect a Golden Seed & other Key Items',
+      link: 'https://eldenring.wiki.fextralife.com/Golden+Seed',
+    },
+  ],
+  [
+    'crumbling-farum-azula-08',
+    {
+      title: 'Navigate the Dragon Temple Rooftops',
+    },
+  ],
+  [
+    'crumbling-farum-azula-09',
+    {
+      title: 'Defeat Dragonlord Placidusax',
+      link: 'https://eldenring.wiki.fextralife.com/Dragonlord+Placidusax',
+    },
+  ],
+  [
+    'crumbling-farum-azula-10',
+    {
+      title: "Collect the Old Lord's Talisman",
+      link: "https://eldenring.wiki.fextralife.com/Old+Lord's+Talisman",
+    },
+  ],
+  [
+    'crumbling-farum-azula-11',
+    {
+      title: 'Defeat Beast Clergyman/Maliketh, the Black Blade',
+      link: 'https://eldenring.wiki.fextralife.com/Beast+Clergyman',
+    },
+  ],
+  [
+    'leyndell-ashen-capital-01',
+    {
+      title: 'Explore the Subterranean Shunning-Grounds',
+      link: 'https://eldenring.wiki.fextralife.com/Subterranean+Shunning-Grounds',
+    },
+  ],
+  [
+    'leyndell-ashen-capital-02',
+    {
+      title: 'Grab the Somber Ancient Dragon Smithing Stone',
+      link: 'https://eldenring.wiki.fextralife.com/Somber+Ancient+Dragon+Smithing+Stone',
+    },
+  ],
+  [
+    'leyndell-ashen-capital-03',
+    {
+      title: "Complete Brother Corhyn/Goldmask's quest",
+      link: 'https://eldenring.wiki.fextralife.com/Brother+Corhyn',
+    },
+  ],
+  [
+    'leyndell-ashen-capital-04',
+    {
+      title: 'Defeat an old ally, now boss',
+    },
+  ],
+  [
+    'leyndell-ashen-capital-05',
+    {
+      title: 'Defeat Godfrey, First Elden Lord/Hoarah Loux, Warrior',
+      link: 'https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord',
+    },
+  ],
+  [
+    'leyndell-ashen-capital-06',
+    {
+      title: 'Defeat Radagon of the Golden Order/Elden Beast',
+      link: 'https://eldenring.wiki.fextralife.com/Radagon+of+the+Golden+Order',
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-01',
+    {
+      title: 'Navigate the pipe room',
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-02',
+    {
+      title: "Obtain Mohg's Shackle",
+      link: "https://eldenring.wiki.fextralife.com/Mohg's+Shackle",
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-03',
+    {
+      title: 'Navigate the Leyndell Catacombs',
+      link: 'https://eldenring.wiki.fextralife.com/Leyndell+Catacombs',
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-04',
+    {
+      title: 'Defeat Esgar, Priest of Blood',
+      link: 'https://eldenring.wiki.fextralife.com/Esgar,+Priest+of+Blood',
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-05',
+    {
+      title: 'Visit the Dung Eater in jail',
+      link: 'https://eldenring.wiki.fextralife.com/Dung+Eater',
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-06',
+    {
+      title: 'Navigate the sewer tunnels',
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-07',
+    {
+      title: 'Defeat Mohg, the Omen',
+      link: 'https://eldenring.wiki.fextralife.com/Mohg,+the+Omen',
+    },
+  ],
+  [
+    'subterranean-shunning-grounds-08',
+    {
+      title: "Complete Hyetta's quest",
+      link: 'https://eldenring.wiki.fextralife.com/Hyetta',
+    },
+  ],
+  [
+    'endings-01',
+    {
+      title: "The Three Fingers' ending",
+      link: 'https://eldenring.wiki.fextralife.com/Three+Fingers',
+    },
+  ],
+  [
+    'endings-02',
+    {
+      title: "Ranni the Witch's ending",
+      link: 'https://eldenring.wiki.fextralife.com/Ranni+the+Witch',
+    },
+  ],
+  [
+    'endings-03',
+    {
+      title: "Fia's ending",
+      link: 'https://eldenring.wiki.fextralife.com/Fia',
+    },
+  ],
+  [
+    'endings-04',
+    {
+      title: "Brother Corhyn/Goldmask's ending",
+      link: 'https://eldenring.wiki.fextralife.com/Brother+Corhyn',
+    },
+  ],
+  [
+    'endings-05',
+    {
+      title: "Dung Eater's ending",
+      link: 'https://eldenring.wiki.fextralife.com/Dung+Eater',
+    },
+  ],
+  [
+    'endings-06',
+    {
+      title: 'Default ending',
+    },
+  ],
 ]);
 
 export default taskHash;
