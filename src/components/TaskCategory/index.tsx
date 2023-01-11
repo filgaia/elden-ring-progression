@@ -100,8 +100,7 @@ const TaskCategory = (props: TaskCategoryProps) => {
                 <tr className="bg-gray-50">
                   <th>Done</th>
                   <th>Task</th>
-                  <th>Wiki</th>
-                  <th>Image</th>
+                  <th>Info</th>
                 </tr>
               </thead>
               <tbody>

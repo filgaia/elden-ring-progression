@@ -33,6 +33,22 @@ const ProgressRow = (props: ProgressRowProps) => {
     toggleCheckbox(!checked, id);
   };
 
+  const buildImgAction = () => {
+    return image && image !== '' ? (
+      <img
+        src={image}
+        onError={(event) => {
+          event.currentTarget.src =
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whetstone_knife-elden-ring-wiki-guide-200px.png';
+        }}
+        className="object-scale-down h-20 w-20 p-1 bg-white border rounded shadow-lg max-w-full hover:bg-grey-600 transition duration-500 hover:scale-150"
+        alt={title}
+      />
+    ) : (
+      longDesc && <InformationCircleIcon className="h-5 w-5 text-black-500" />
+    );
+  };
+
   return (
     <tr
       id={id}
@@ -51,38 +67,33 @@ const ProgressRow = (props: ProgressRowProps) => {
         />
       </td>
       <td className="text-sm text-gray-900 font-light px-6 py-4">
-        {index}. {title}
-        {longDesc && (
-          <button
-            className="bg-blue-500 text-white active:bg-blue-600 ml-6 px-2 py-1 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-            type="button"
-            onClick={() => setShowModal(true)}
+        {index}.{' '}
+        {link ? (
+          <a
+            href={link}
+            target="_blank"
+            className="no-underline"
+            rel="noreferrer"
           >
-            <InformationCircleIcon className="h-5 w-5 text-black-500" />
-          </button>
-        )}
-      </td>
-      <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-        {link && (
-          <a href={link} target="_blank" rel="noreferrer">
-            <ArrowTopRightOnSquareIcon className="h-5 w-5 text-black-500" />
+            {title}{' '}
+            <ArrowTopRightOnSquareIcon className="h-5 w-5 text-black-500 inline-block" />
           </a>
+        ) : (
+          title
         )}
       </td>
       <td className="text-sm text-gray-900 font-light">
         <div className="flex flex-wrap justify-center">
-          {image && image !== '' && (
-            <a href={image} target="_blank" rel="noreferrer">
-              <img
-                src={image}
-                onError={(event) => {
-                  event.currentTarget.src =
-                    'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whetstone_knife-elden-ring-wiki-guide-200px.png';
-                }}
-                className="object-scale-down h-20 w-20 p-1 bg-white border rounded shadow-lg max-w-full hover:bg-grey-600 transition duration-500 hover:scale-150"
-                alt={title}
-              />
-            </a>
+          {longDesc ? (
+            <button
+              className="text-black ml-6 px-2 py-1 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button"
+              onClick={() => setShowModal(true)}
+            >
+              {buildImgAction()}
+            </button>
+          ) : (
+            buildImgAction()
           )}
         </div>
         <Modal
